@@ -1,0 +1,267 @@
+body {
+/*    background-image: url("../images/background.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #dfdede;
+    opacity: 90%;*/
+    background-color: black;
+    font-family: 'League Spartan', sans-serif;
+    margin: 0;
+}
+
+/*
+/
+/
+/ THIS IS THE NAVBAR
+/
+/
+*/
+
+.navbar {
+    direction: rtl;
+}
+
+.navbar-brand {
+    font-size: 3vw;
+}
+
+.nav-link{
+    font-size: 2vw;
+}
+.nav-link:hover{
+    color: rgb(87, 85, 85);
+    border-radius: 10%;
+}
+
+.navbar-toggler-icon {
+    max-width: 3vw;
+    max-height: 3vw;
+}
+
+/*
+/
+/
+/ THIS IS THE COVER SECTION
+/
+/
+*/
+
+.cover {
+    height: 40vw;
+    color: white;
+    margin-bottom: 6.5vw;
+}
+
+.cover-area {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cover-text {
+    margin-left: 4vw;
+    margin-bottom: 6.5vw;
+}
+
+.my-name {
+    font-size: 6vw;
+    margin: 0;
+}
+
+.profession {
+    margin: 0;
+    font-size: 3vw;
+    font-weight: 300;
+}
+
+.socials {
+    padding-bottom: 5.5vw;
+    margin-right: 2vw;
+}
+
+
+/*
+/
+/
+/ THIS IS THE ABOUT SECTION
+/
+/
+*/
+
+#about {
+    display: flex;
+    justify-content: space-around;
+    padding: 3.8vw;
+    width: 100%;
+    color: white;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-text {
+    font-size: 3vw;
+}
+
+.presentation {
+    margin: 0;
+    font-size: 2vw;
+    font-weight: 300;
+}
+
+.picture-container {
+    display: flex;
+    align-items: center;
+}
+
+.me {
+    height: 25vw;
+    max-width: 31.8vw;
+    max-height: 31.8vw;
+    border-radius: 25%;
+    margin-left: 4vw;
+}
+
+.languages, .tools {
+    padding: 1em;
+}
+
+i {
+    font-size: 4vw;
+    padding: 2vw;
+}
+
+/*
+/
+/
+/ THIS IS THE PROJECTS SECTION
+/
+/
+*/
+
+#projects {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 3.8vw;
+}
+
+.project-text {
+    font-size: 3vw;
+    margin: 1em 0em;
+}
+
+.projects-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project {
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-grow: unset;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10%;
+    width: 29.4vw;
+    min-height: 29.4vw;
+    box-shadow: 0.5vw  0.5vw 1vw rgb(197, 195, 195);
+    margin: 10px;
+}
+
+.project:hover {
+    background-color: rgb(255, 245, 255);
+}
+
+.project-image {
+    margin-top: 2vw;
+    width: 18.3vw;
+    height: 18.3vw;
+    max-width: 18.3vw;
+    max-height: 18.3vw;
+    border-radius: 3vw;
+}
+
+.project-title {
+    font-size: 3vw;
+}
+
+.project-description {
+    font-size: 2vw;
+    font-weight: 300;
+    margin: 0vw 3vw;
+}
+
+.project-links {
+    display: flex;
+    justify-content: center;
+}
+
+/*
+/
+/
+/ THIS IS THE CONTACT SECTION
+/
+/
+*/
+
+#contact {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 3.8vw;
+    font-size: 3vw;
+}
+
+.contact-text {
+    font-size: 3vw;
+    margin: 1em 0em;
+}
+
+
+/*
+/
+/
+/ MEDIA QUERIES FOR MOBILE DEVICES
+/
+/
+*/
+
+
+@media (max-width: 500px) 
+  and (orientation: portrait) {
+
+    #about {
+        flex-direction: column;
+    }
+    .cover-area {
+        flex-direction: column;
+    }
+    .cover-text {
+        margin-top: 3.5vw;
+        margin-bottom: 3.5vw;
+    }
+    .socials {
+        display: flex;
+        margin-bottom: 10vw;
+    }
+    .picture-container {
+        display: flex;
+        justify-content: center;
+    }
+    .me {
+    max-width: 70vw;
+    max-height: 70vw;
+    border-radius: 25%;
+    margin-left: 4vw;
+}
+
+
+}
